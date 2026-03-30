@@ -3,6 +3,7 @@ import { Factory, House, Mail, Snowflake, Zap } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { navItems } from '../../data/siteContent'
 import { cn } from '@/lib/utils'
+import { publicAsset } from '@/lib/publicAsset'
 
 const navIcons = {
   Inicio: House,
@@ -41,7 +42,7 @@ export function Header() {
         >
           <img
             className="block h-auto w-25.5 rounded md:w-38.5"
-            src="/logo/logonegro_noback.png"
+            src={publicAsset('logo/logonegro_noback.png')}
             alt="Logo de la empresa"
           />
         </NavLink>
@@ -114,4 +115,5 @@ export function Header() {
     </header>
   )
 }
+
 

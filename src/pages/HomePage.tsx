@@ -1,6 +1,7 @@
 ﻿import { Building2, MapPin, Phone, ShieldCheck } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { WhatsAppButton } from '../components/ui/WhatsAppButton'
+import { publicAsset } from '../lib/publicAsset'
 import {
   addressText,
   companyHighlights,
@@ -41,7 +42,7 @@ export function HomePage() {
           </div>
         </div>
         <div className="overflow-hidden rounded-2xl border-2 border-dashed border-blue-200 text-slate-600">
-          <img className="block h-full w-full object-cover" src="/mainImg.jpg" alt="Foto del equipo en obra" />
+          <img className="block h-full w-full object-cover" src={publicAsset('mainImg.jpg')} alt="Foto del equipo en obra" />
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 ﻿import { Calculator, Wrench } from 'lucide-react'
 import { BtuCalculatorDialog } from '../components/air/BtuCalculatorDialog'
 import { WhatsAppButton } from '../components/ui/WhatsAppButton'
+import { publicAsset } from '../lib/publicAsset'
 import {
   airBasicInstallItems,
   airBracketPricing,
@@ -39,7 +40,7 @@ export function AirConditioningPage() {
         </div>
         <div className="grid min-h-60 overflow-hidden rounded-2xl border-2 border-dashed border-blue-200">
           <img
-            src="/aire-arreglo.jpg"
+            src={publicAsset('aire-arreglo.jpg')}
             alt="Aire acondicionado en servicio tecnico"
             className="h-full w-full object-cover"
           />
@@ -70,7 +71,7 @@ export function AirConditioningPage() {
               </ul>
               <div className="grid min-h-56 overflow-hidden rounded-xl border-2 border-dashed border-blue-300 bg-white p-2">
                 <img
-                  src="/instalacionbasica.png"
+                  src={publicAsset('instalacionbasica.png')}
                   alt="Instalación básica de aire acondicionado"
                   className="h-full w-full object-contain"
                 />

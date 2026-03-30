@@ -1,6 +1,7 @@
 ﻿import { Factory, FileText } from 'lucide-react'
 import { WhatsAppButton } from '../components/ui/WhatsAppButton'
 import { industrialBlocks, whatsappMessage, whatsappNumber } from '../data/siteContent'
+import { publicAsset } from '../lib/publicAsset'
 
 export function IndustrialPage() {
   return (
@@ -31,7 +32,7 @@ export function IndustrialPage() {
         </div>
         <div className="min-h-60 overflow-hidden rounded-2xl border-2 border-dashed border-slate-300">
           <img
-            src="/industrial.jpg"
+            src={publicAsset('industrial.jpg')}
             alt="Imagen industrial"
             className="h-full w-full object-cover"
           />
@@ -133,3 +134,4 @@ export function IndustrialPage() {
     </>
   )
 }
+

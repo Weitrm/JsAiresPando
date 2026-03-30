@@ -1,6 +1,7 @@
 ﻿import { AirVent, Cable, Lightbulb, ShieldAlert, Wrench, Zap } from 'lucide-react'
 import { WhatsAppButton } from '../components/ui/WhatsAppButton'
 import { electricalServiceCards, whatsappMessage, whatsappNumber } from '../data/siteContent'
+import { publicAsset } from '../lib/publicAsset'
 
 const serviceIcons = [Cable, Wrench, ShieldAlert, Lightbulb, AirVent]
 
@@ -33,7 +34,7 @@ export function ElectricalPage() {
         </div>
         <div className="min-h-60 overflow-hidden rounded-2xl border-2 border-dashed border-amber-300">
           <img
-            src="/electricidad.png"
+            src={publicAsset('electricidad.png')}
             alt="Imagen de tecnico con tablero electrico"
             className="h-full w-full object-cover"
           />
@@ -122,3 +123,4 @@ export function ElectricalPage() {
     </>
   )
 }
+

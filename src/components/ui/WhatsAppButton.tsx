@@ -1,4 +1,5 @@
 ﻿import { cn } from '@/lib/utils'
+import { publicAsset } from '@/lib/publicAsset'
 
 type WhatsAppButtonProps = {
   whatsappNumber: string
@@ -18,9 +19,10 @@ export function WhatsAppButton({ whatsappNumber, whatsappMessage, label, classNa
       target="_blank"
       rel="noreferrer"
     >
-      <img src="/whatsapp.svg" alt="" aria-hidden="true" className="h-4 w-4" />
+      <img src={publicAsset('whatsapp.svg')} alt="" aria-hidden="true" className="h-4 w-4" />
       {label}
     </a>
   )
 }
+
 
