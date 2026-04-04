@@ -3,7 +3,7 @@ export const whatsappNumber = '59893365696'
 export const whatsappMessage = encodeURIComponent(
   'Hola, quiero asesoramiento para un servicio tecnico integral.',
 )
-export const emailAddress = 'Jorgesilva1489@gmail.com'
+export const emailAddress = 'contacto@jsairespando.com'
 export const phoneNumber = '093365696'
 export const addressText = 'Pando, Canelones, Uruguay'
 
@@ -185,6 +185,25 @@ export const airBracketPricing = [
   {
     item: '18.000 y 24.000 BTU',
     price: '$850',
+  },
+]
+
+export type HydroWashPrice = {
+  btu: string
+  simple: string
+  complete: string
+}
+
+export const airHydroWashPricing: HydroWashPrice[] = [
+  {
+    btu: '9.000 a 12.000 BTU',
+    simple: '$2800',
+    complete: '$4200',
+  },
+  {
+    btu: '18.000 a 24.000 BTU',
+    simple: '$3500',
+    complete: '$5200',
   },
 ]
 

@@ -14,35 +14,39 @@ import {
 export function HomePage() {
   return (
     <>
-      <section className="grid gap-4 rounded-3xl border border-slate-300 bg-gradient-to-br from-blue-100 to-orange-100 p-5 shadow-sm md:grid-cols-2">
-        <div>
-          <p className="inline-flex rounded-full border border-blue-200 bg-blue-100 px-3 py-1 text-xs font-bold uppercase tracking-wide text-blue-800">
-            Servicios Tecnicos Integrales
-          </p>
-          <h1 className="mt-3 text-3xl font-semibold leading-tight text-slate-900 md:text-5xl">
-            Crecimos para cubrir electricidad, climatizacion e infraestructura industrial
-          </h1>
-          <p className="mt-3 max-w-3xl text-base font-medium text-slate-700 md:text-lg">
-            Comenzamos con aire acondicionado y hoy resolvemos proyectos tecnicos de mayor escala
-            para hogares, comercios y empresas.
-          </p>
-          <div className="mt-4 grid gap-2 sm:flex sm:flex-wrap">
-            <WhatsAppButton
-              whatsappNumber={whatsappNumber}
-              whatsappMessage={whatsappMessage}
-              label="Contactar por WhatsApp"
-              className="sm:w-auto"
-            />
-            <a
-              href="tel:093365696"
-              className="inline-flex items-center justify-center rounded-xl border border-blue-200 bg-slate-100 px-4 py-3 text-sm font-bold text-slate-800 transition hover:-translate-y-0.5"
-            >
-              Llamar ahora
-            </a>
+      <section
+        className="relative overflow-hidden rounded-3xl border border-slate-300 bg-cover bg-center bg-no-repeat p-5 shadow-sm"
+        style={{ backgroundImage: `url(${publicAsset('mainImg.jpg')})` }}
+      >
+        <div className="absolute inset-0 bg-slate-900/55" />
+        <div className="relative z-10 grid gap-4 md:grid-cols-2">
+          <div>
+            <p className="inline-flex rounded-full border border-blue-200 bg-blue-100 px-3 py-1 text-xs font-bold uppercase tracking-wide text-blue-800">
+              Servicios Tecnicos Integrales
+            </p>
+            <h1 className="mt-3 text-3xl font-semibold leading-tight text-white md:text-5xl">
+              Crecimos para cubrir electricidad, climatizacion e infraestructura industrial
+            </h1>
+            <p className="mt-3 max-w-3xl text-base font-medium text-slate-100 md:text-lg">
+              Comenzamos con aire acondicionado y hoy resolvemos proyectos tecnicos de mayor escala
+              para hogares, comercios y empresas.
+            </p>
+            <div className="mt-4 grid gap-2 sm:flex sm:flex-wrap">
+              <WhatsAppButton
+                whatsappNumber={whatsappNumber}
+                whatsappMessage={whatsappMessage}
+                label="Contactar por WhatsApp"
+                className="sm:w-auto"
+              />
+              <a
+                href="tel:093365696"
+                className="inline-flex items-center justify-center rounded-xl border border-blue-200 bg-slate-100 px-4 py-3 text-sm font-bold text-slate-800 transition hover:-translate-y-0.5"
+              >
+                Llamar ahora
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="overflow-hidden rounded-2xl border-2 border-dashed border-blue-200 text-slate-600">
-          <img className="block h-full w-full object-cover" src={publicAsset('mainImg.jpg')} alt="Foto del equipo en obra" />
+          <div/>
         </div>
       </section>
 
