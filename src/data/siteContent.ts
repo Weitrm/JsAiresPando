@@ -202,7 +202,7 @@ export const airHydroWashPricing: HydroWashPrice[] = [
   },
   {
     btu: '18.000 a 24.000 BTU',
-    simple: '$3500',
+    simple: '$3800',
     complete: '$5200',
   },
 ]
